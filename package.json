@@ -7,7 +7,7 @@
     "start": "node vidly-backend/index.js",
     "server": "nodemon vidly-backend/index.js",
     "client": "npm start --prefix vidly",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Hichem BOUZOURINE",
